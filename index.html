@@ -3,32 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portal • Constellation</title>
-<link rel="stylesheet" href="ui.css">
+<title>Humanitarian Pathways • Zion Constellation</title>
+<meta name="description" content="A funder-facing portal for the Exodus Charter, legal access for the people, and scalable humanitarian relief.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111827; --muted:#475569; --frame:#E5E7EB; --panel:#ffffff; --bg:#F8FAFC;
+  --grad1:#0ea5e9; --grad2:#10b981;
+  --cta:#0f766e; --cta-ink:#ecfeff;
+}
+*{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Helvetica,Arial,sans-serif}
+.container{max-width:1120px;margin:0 auto;padding:22px}
+.header{background:linear-gradient(90deg,var(--grad1),var(--grad2));color:white}
+.brand{display:flex;align-items:center;gap:14px;padding:18px 0}
+.brand h1{margin:0;font-size:1.45rem;letter-spacing:.2px}
+.badge{display:inline-block;padding:4px 10px;background:#ffffff20;border:1px solid #ffffff55;border-radius:999px;font-size:.8rem}
+.nav{display:flex;gap:10px;flex-wrap:wrap;padding:0 0 18px}
+.nav a{color:white;text-decoration:none;border:1px solid #ffffff55;padding:8px 12px;border-radius:10px;background:#ffffff18}
+.nav a:hover{background:#ffffff30}
+.hero{margin-top:-18px;background:var(--panel);border:1px solid var(--frame);border-radius:16px;padding:22px}
+.hero h2{margin:0 0 6px}
+.grid{display:grid;gap:16px}
+.cols-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;border:1px solid var(--frame);border-radius:12px;overflow:hidden}
+.card .p{padding:14px}
+.card img{display:block;width:100%;height:auto}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--cta);color:var(--cta-ink);text-decoration:none;font-weight:800;border:0}
+.kicker{color:var(--muted);font-size:.95rem}
+.footer{padding:26px 0;text-align:center;color:var(--muted);font-size:.9rem}
+.price{font-weight:800;border:1px solid var(--frame);border-radius:999px;padding:4px 10px;font-size:.85rem}
+</style>
 </head>
 <body>
-<main class="container">
-
-<section class="hero" style="background:#fff;border:2px solid #d7deea;border-radius:16px;padding:20px">
-  <h1>Zion Constellation</h1>
-  <p>Unified portal for Zion Sanctuary • Exodus Charter • Michael Stone Legal • ICHLR • Sovereign Circle • Legal Game.</p>
-  <p>
-    <a class="btn" href="zion_index.html">Enter Zion Sanctuary</a>
-    <a class="btn" href="membership.html" style="margin-left:8px">Legal Membership</a>
-    <a class="btn" href="library.html" style="margin-left:8px">Legal Game Library</a>
-  </p>
-</section>
-
-<section class="panel">
-  <h2>Featured Merch</h2>
-  <div class="grid cols-3">
-    <div class="card"><img src="brnhoodie.png" alt="Hoodie" style="width:100%"><div class="p"><h3>Unisex Hoodie <span class="badge">$55</span></h3></div></div>
-    <div class="card"><img src="brnhatlion.png" alt="Cap" style="width:100%"><div class="p"><h3>Lion Icon Cap <span class="badge">$27</span></h3></div></div>
-    <div class="card"><img src="brnwomensvnecktshirt.png" alt="Women’s V-neck" style="width:100%"><div class="p"><h3>Women’s V‑Neck <span class="badge">$28</span></h3></div></div>
+<header class="header">
+  <div class="container">
+    <div class="brand">
+      <div style="width:40px;height:40px;border-radius:10px;background:#ffffff22;border:1px solid #ffffff55"></div>
+      <div>
+        <h1>Humanitarian Pathways</h1>
+        <div class="badge">Zion Constellation • Funder Portal</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="membership.html">Michael Stone Legal</a>
+      <a href="library.html">Legal Game</a>
+      <a href="zion_index.html">Zion Sanctuary</a>
+      <a href="resources.html">Resources</a>
+      <a href="fund.html">Fund the Charter</a>
+    </nav>
   </div>
-</section>
+</header>
 
+<main class="container">
+  <section class="hero">
+    <h2>Exodus Charter: From Risk to Safety</h2>
+    <p class="kicker">Practical relief at scale — logistics, containerized shelter, food & water corridors, and legal access for those most at risk.</p>
+    <p><a class="btn" href="fund.html">Open Funding Brief</a></p>
+  </section>
+
+  <section class="grid cols-3" style="margin-top:12px">
+    <div class="card">
+      <img src="brnhoodie.png" alt="Hoodie">
+      <div class="p">
+        <h3>Movement Merch <span class="price">$55</span></h3>
+        <p class="kicker">Every purchase fuels operations and family relocation.</p>
+        <a class="btn" href="zion_index.html">View Gallery</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="brnhatlion.png" alt="Cap">
+      <div class="p">
+        <h3>People’s Lawyer</h3>
+        <p class="kicker">Membership tiers and toolkits under a clean legal sanctuary.</p>
+        <a class="btn" href="membership.html">Membership</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="brnwomensvnecktshirt.png" alt="Women’s V-neck">
+      <div class="p">
+        <h3>Legal Game & Library</h3>
+        <p class="kicker">Self-rep prep, drills, and case-kit workflows.</p>
+        <a class="btn" href="library.html">Open Library</a>
+      </div>
+    </div>
+  </section>
 </main>
-<script src="app.js"></script>
+
+<footer class="footer">
+  © <span id="y"></span> Zion Constellation • Contact: $zionsanctuary (Cash App)
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
