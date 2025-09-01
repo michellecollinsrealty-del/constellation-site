@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bookshelf • Zion Constellation</title>
+<link rel="stylesheet" href="ui.css">
+<style>
+.banner{background:linear-gradient(90deg,#0ea5e9,#10b981);color:#fff;border-radius:14px;padding:18px;border:1px solid #ffffff55;margin-bottom:16px}
+.kicker{opacity:.95}
+.stack{display:grid;gap:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden}
+.card .p{padding:16px}
+.card h3{margin:0 0 6px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#0f766e;color:#ecfeff;text-decoration:none;font-weight:800}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #E5E7EB;background:#fff;font-size:.85rem}
+.hero{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:22px;margin-bottom:12px}
+.small{font-size:.9rem;color:#475569}
+.container{max-width:1120px;margin:0 auto;padding:22px}
+</style>
+</head>
+<body>
+<main class="container">
+  <section class="banner">
+    <h1 style="margin:0 0 6px">Bookshelf — Zion Constellation</h1>
+    <div class="kicker">A growing catalog of works by Michelle Collins.</div>
+  </section>
+
+  <section class="hero">
+    <strong>Books Coming in 2025:</strong> <span class="small">This living shelf will expand as new titles are finalized for print. Thank you for your support.</span>
+  </section>
+
+  <section class="stack">
+    <div class="card">
+      <div class="p">
+        <h3>The Sovereign Path</h3>
+        <div class="small">A Guide to Lawful Sovereignty and Sacred Prosperity</div>
+        <p class="small" style="margin-top:8px"><em>“A roadmap to dignity, land, and prosperity — reclaiming what was always yours through lawful sovereignty.”</em></p>
+        <p>
+          <!-- Replace the href with your uploaded PDF path once you add it to the repo -->
+          <a class="btn" href="The_Sovereign_Path_6x9.pdf">📘 Download Book (PDF)</a>
+          <a class="btn" style="margin-left:8px;background:#0ea5e9" href="#">🛒 Order Hard Copy</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="p">
+        <h3>Let My People Go <span class="badge">Coming Soon</span></h3>
+        <div class="small">The Call to Break Babylon’s Chains</div>
+        <p class="small" style="margin-top:8px"><em>“The voice that will not be silenced — a call to families, nations, and generations to rise and walk free.”</em></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="p">
+        <h3>Army of Yahuah <span class="badge">Coming Soon</span></h3>
+        <div class="small">The War Drum Awakens</div>
+        <p class="small" style="margin-top:8px"><em>“A battle cry rooted in covenant — preparing warriors of faith to stand strong in the days ahead.”</em></p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
