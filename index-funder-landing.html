@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humanitarian Pathways — Legal Sanctuary & Programs</title>
+  <meta name="description" content="Professional, funder‑ready overview of Humanitarian Pathways: legal sanctuary membership, casework library, transparent funding, and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Domine:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-start:#F6F1E5; /* creme */
+      --bg-end:#EDEAD9;   /* soft sand */
+      --ink:#0F6A4F;      /* deep evergreen */
+      --teal:#1B7C6A;     /* blue/green accent */
+      --olive:#7A5B22;    /* olive‑gold accent */
+      --muted:#4b4b4b;
+      --panel:#ffffff;
+      --ring:rgba(15,106,79,.12);
+      --star1:#FFF6C2; --star2:#B5E3DA; --line:#0F6A4F;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1b1b1b;background:#fff}
+    a{color:var(--ink);text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+
+    /* Header */
+    .header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #eee}
+    .wrap{max-width:1140px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--ink),#2c8a6f)}
+    nav a{margin:0 10px;font-weight:700;color:#173f32}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;font-weight:800;border:2px solid transparent}
+    .btn.primary{background:var(--ink);color:#fff;box-shadow:0 6px 16px rgba(15,106,79,.18)}
+    .btn.outline{border-color:var(--ink);color:var(--ink)}
+
+    /* Creme border faded into blue/green around major panels */
+    .panel{
+      background:var(--panel);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      border:6px solid transparent;
+      --grad: linear-gradient(180deg, #F9F4E7, #F9F4E7) padding-box,
+              linear-gradient(135deg, #F6F1E5, #CBE8DF 45%, #19806E) border-box;
+      background: var(--grad);
+    }
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--bg-start),var(--bg-end))}
+    .hero .inner{max-width:1140px;margin:0 auto;padding:72px 20px 84px;text-align:center;position:relative;z-index:1}
+    .kicker{font:700 12px/1 Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin-bottom:10px}
+    h1{font-family:Domine,ui-serif,Georgia,serif;font-weight:700;font-size:clamp(28px,6vw,56px);line-height:1.08;margin:0 0 10px}
+    .lead{font-size:clamp(16px,2.4vw,20px);line-height:1.6;color:#2a2a2a;margin:0 auto 22px;max-width:74ch}
+    .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .hero-ctas .btn{min-width:170px}
+
+    /* Sections */
+    .section{padding:56px 20px}
+    .container{max-width:1140px;margin:0 auto}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12}
+    @media(min-width:720px){
+      .span-4{grid-column:span 4}
+      .span-6{grid-column:span 6}
+    }
+    .card h3{margin:10px 0 6px;font-size:20px}
+    .muted{color:var(--muted)}
+    .eyebrow{font:800 12px/1 Inter;text-transform:uppercase;letter-spacing:.14em;color:var(--olive)}
+    .actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+
+    .pill{display:inline-block;background:#f2efe7;border:1px solid #e9e5da;border-radius:999px;padding:8px 12px;color:#3a3a3a;font-weight:700}
+
+    /* Merch thumbnails row (links only; not selling on front) */
+    .thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media(min-width:720px){ .thumbs{grid-template-columns:repeat(4,1fr);} }
+    .thumb{position:relative;border-radius:12px;overflow:hidden;border:4px solid transparent;
+      background:
+        linear-gradient(180deg,#fff,#fff) padding-box,
+        linear-gradient(135deg,#F6F1E5,#CBE8DF 40%,#19806E) border-box;}
+    .thumb a{display:block}
+    .thumb .label{position:absolute;left:10px;bottom:10px;background:rgba(11,45,36,.9);color:#fff;
+      padding:6px 10px;border-radius:10px;font-weight:800;font-size:12px}
+
+    /* Safe image defaults */
+    .card img,.thumb img{width:100%;height:220px;object-fit:cover}
+
+    footer{background:#0b2d24;color:#eafff8}
+    footer .wrap{padding:28px 20px;display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+    footer a{color:#eafff8;opacity:.9}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <div class="brand"><div class="logo" aria-hidden="true"></div>Humanitarian Pathways</div>
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#programs">Programs</a>
+      <a href="#funding">Funding</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn outline" href="https://genuine-peony-aa993d.netlify.app/pages/join" target="_blank" rel="noopener">Membership</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="inner panel">
+    <div class="kicker">Relief • Restoration • Return</div>
+    <h1>Humanitarian Pathways — Legal Sanctuary</h1>
+    <p class="lead">A dignified, professional pathway for displaced and at‑risk families: legal membership, casework toolkits, transparent funding, and community logistics.</p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="https://genuine-peony-aa993d.netlify.app/pages/join" target="_blank" rel="noopener">Join Membership</a>
+      <a class="btn outline" href="https://spectacular-tiramisu-e52bd4.netlify.app/pages/fund" target="_blank" rel="noopener">Make a Contribution</a>
+      <a class="btn outline" href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">Visit Merch</a>
+    </div>
+  </div>
+</section>
+
+<section id="mission" class="section">
+  <div class="container">
+    <div class="grid">
+      <div class="card span-6 panel">
+        <div class="eyebrow">Mission</div>
+        <h3>Build safe legal pathways for families to relocate and thrive.</h3>
+        <p class="muted">We provide clarity, documentation, training, and logistics so families can move from crisis to stability. Our approach is respectful, auditable, and focused on real‑world outcomes.</p>
+        <div class="actions">
+          <span class="pill">Legal sanctuary membership</span>
+          <span class="pill">Casework toolkits</span>
+          <span class="pill">Relocation logistics</span>
+        </div>
+      </div>
+      <div class="card span-6 panel">
+        <div class="eyebrow">What We Provide</div>
+        <h3>Membership, toolkits, and transparent funding.</h3>
+        <p class="muted">Members access templates, workflows, and guided preparation. Partners can review our transparent funding channel and impact updates, with a clear line of sight on where support goes.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://genuine-peony-aa993d.netlify.app/pages/join" target="_blank" rel="noopener">Join Now</a>
+          <a class="btn outline" href="https://spectacular-tiramisu-e52bd4.netlify.app/pages/fund" target="_blank" rel="noopener">Review Funding</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programs" class="section">
+  <div class="container">
+    <div class="eyebrow">Programs</div>
+    <h2 style="font-family:Domine,serif;margin:6px 0 18px;">A clear pathway from preparation to action</h2>
+    <div class="grid">
+      <div class="card span-6 panel">
+        <h3>Legal Sanctuary Membership</h3>
+        <p class="muted">Professional, respectful onboarding for individuals and families. Includes templates, checklists, training modules, and priority access to casework guidance.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://genuine-peony-aa993d.netlify.app/pages/join" target="_blank" rel="noopener">Membership Tiers</a>
+          <a class="btn outline" href="https://glistening-wisp-3fcf2b.netlify.app/#home" target="_blank" rel="noopener">Program Overview</a>
+        </div>
+      </div>
+      <div class="card span-6 panel">
+        <h3>Casework Library & Toolkits</h3>
+        <p class="muted">Scenario‑based preparation, document checklists, and practical workflows designed to reduce errors and increase readiness. Built to support self‑advocacy with dignity.</p>
+        <div class="actions">
+          <a class="btn outline" href="https://singular-mooncake-9dafe7.netlify.app" target="_blank" rel="noopener">Explore Library</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funding" class="section">
+  <div class="container">
+    <div class="grid">
+      <div class="card span-6 panel">
+        <div class="eyebrow">Direct Funding</div>
+        <h3>Transparent support channel for urgent cases</h3>
+        <p class="muted">Every contribution fuels relocation logistics—documents, travel, safe housing, food, and water. Our funding page outlines how support is applied with a simple, auditable workflow.</p>
+        <a class="btn primary" href="https://spectacular-tiramisu-e52bd4.netlify.app/pages/fund" target="_blank" rel="noopener">Contribute</a>
+      </div>
+      <div class="card span-6 panel">
+        <div class="eyebrow">Contact & Partnerships</div>
+        <h3>Tribal councils, NGOs, and funders</h3>
+        <p class="muted">We welcome collaborative partnerships that expand capacity and reach. Contact us to review current needs, case profiles, and field operations.</p>
+        <div class="actions">
+          <a class="btn outline" href="https://thunderous-sundae-374560.netlify.app/pages/contact" target="_blank" rel="noopener">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: merch thumbnails as proof of community support tools (not a store front) -->
+    <div style="margin-top:26px" class="panel">
+      <div class="eyebrow">Community Tools (Optional)</div>
+      <p class="muted">Select items that support outreach and awareness. Purchasing is handled on a separate page; this homepage remains professional and funder‑focused.</p>
+      <div class="thumbs">
+        <div class="thumb">
+          <a href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Merch item">
+            <span class="label">View Merch</span>
+          </a>
+        </div>
+        <div class="thumb">
+          <a href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Merch item">
+            <span class="label">Hats & Apparel</span>
+          </a>
+        </div>
+        <div class="thumb">
+          <a href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop" alt="Merch item">
+            <span class="label">Accessories</span>
+          </a>
+        </div>
+        <div class="thumb">
+          <a href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format&fit=crop" alt="Merch item">
+            <span class="label">Bundles</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="panel">
+      <div class="eyebrow">Get in touch</div>
+      <h3>We’re here to help</h3>
+      <p class="muted">For press, partnerships, or case inquiries, reach out via our contact page. We respond as capacity allows and prioritize urgent humanitarian requests.</p>
+      <div class="actions">
+        <a class="btn outline" href="https://thunderous-sundae-374560.netlify.app/pages/contact" target="_blank" rel="noopener">Contact</a>
+        <a class="btn primary" href="https://spectacular-tiramisu-e52bd4.netlify.app/pages/fund" target="_blank" rel="noopener">Support the Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="y"></span> Humanitarian Pathways • All rights reserved.</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="https://glistening-wisp-3fcf2b.netlify.app/#home" target="_blank" rel="noopener">Overview</a>
+      <a href="https://singular-mooncake-9dafe7.netlify.app" target="_blank" rel="noopener">Library</a>
+      <a href="https://genuine-peony-aa993d.netlify.app/pages/join" target="_blank" rel="noopener">Membership</a>
+      <a href="https://spectacular-tiramisu-e52bd4.netlify.app/pages/fund" target="_blank" rel="noopener">Fund</a>
+      <a href="https://thunderous-sundae-374560.netlify.app/pages/contact" target="_blank" rel="noopener">Contact</a>
+      <a href="https://cute-klepon-305b05.netlify.app/pages/merch" target="_blank" rel="noopener">Merch</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
